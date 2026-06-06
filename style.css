@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(
+        135deg,
+        #ffe5ec,
+        #ffc8dd,
+        #ffb3c6
+    );
+    overflow-x:hidden;
+    color:#5a2a38;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.hero-card{
+    background:rgba(255,255,255,0.5);
+    backdrop-filter:blur(15px);
+    padding:40px;
+    border-radius:30px;
+    text-align:center;
+    max-width:700px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+    color:#ff4d8d;
+}
+
+#typing{
+    min-height:50px;
+    font-size:1.2rem;
+    color:#7a4b5a;
+}
+
+button{
+    margin-top:25px;
+    padding:14px 30px;
+    border:none;
+    border-radius:50px;
+    background:#ff4d8d;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* Message */
+
+.wish{
+    padding:80px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    max-width:800px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#ff4d8d;
+}
+
+.card p{
+    line-height:2;
+}
+
+/* Gift */
+
+.gift-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.section-title{
+    margin-bottom:30px;
+    color:#ff4d8d;
+}
+
+.gift-box{
+    display:flex;
+    justify-content:center;
+}
+
+.gift-icon{
+    font-size:120px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gift-icon:hover{
+    transform:scale(1.1) rotate(5deg);
+}
+
+#secret{
+    display:none;
+    margin-top:25px;
+    font-size:2rem;
+    color:#ff4d8d;
+    animation:fadeIn 1s ease;
+}
+
+/* Gallery */
+
+.gallery{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.gallery h2{
+    color:#ff4d8d;
+    margin-bottom:40px;
+}
+
+.images{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.photo-card{
+    background:white;
+    padding:12px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.photo-card:hover{
+    transform:translateY(-8px);
+}
+
+.photo-card img{
+    width:280px;
+    height:350px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* Final Page */
+
+.final-page{
+    padding:120px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.final-card{
+    background:white;
+    padding:40px;
+    border-radius:30px;
+    text-align:center;
+    max-width:700px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.final-card h2{
+    color:#ff4d8d;
+    margin-bottom:20px;
+}
+
+.final-card p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.final-card h3{
+    color:#ff4d8d;
+}
+
+/* Floating Hearts */
+
+.particle{
+    position:fixed;
+    pointer-events:none;
+    animation:float 10s linear infinite;
+    z-index:-1;
+}
+
+@keyframes float{
+
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .photo-card img{
+        width:100%;
+        max-width:300px;
+        height:auto;
+    }
+
+    #secret{
+        font-size:1.4rem;
+    }
+
+}
