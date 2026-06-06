@@ -1,5 +1,5 @@
 const text =
-"Hey Nidhi, I have a little surprise for you... 🎁💖";
+"Hey Nidhi, I have a little messege for you... 🎁💖";
 
 let i = 0;
 
